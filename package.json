@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.64",
+    "@iconify/icons-ion": "^1.2.10",
     "astro-icon": "^1.1.0"
   }
 }

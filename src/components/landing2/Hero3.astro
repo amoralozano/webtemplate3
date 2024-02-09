@@ -1,0 +1,86 @@
+---
+import { Image } from 'astro:assets';
+import { products } from "../../data/products.json";
+---
+
+<!-- If wanting to change what data shows...refer to the data folder and edit or add any kind of data for your site -->
+
+<div 
+class="w-[100%] md:w-full h-[750px] md:h-[850px]  mt-[-20px] md:mt-[100px] ml-[5%] md:ml-0"
+>
+    <p class="text-left text-[18px] md:mt-[20px] md:ml-[50px] text-[#765c2d]">
+    Deeply Inovating
+    </p>
+    <h1 class="text-left text-[35px] md:text-[58px] md:w-[90%] md:ml-[50px] text-black font-bold">Top Recommeded Destinations</h1>
+    <div
+    class="w-[120%] md:w-full h-[60%] md:h-[520px] flex justify-between overflow-x-hidden md:flex md:items-center md:justify-center mt-[20px] md:mt-[0px] ml-[0px] md:ml-0"
+    >
+        <div 
+        class="flex w-full overflow-scroll [&>div]:flex-shrink-0 ml-[-20px] md:ml-0"
+        >
+            {products.map((template) => (
+                <div
+                class="w-[400px] md:w-[25%] h-[430px] md:h-[470px] rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] rounded-bl-[20px] mt-[10px] md:mt-0 ml-[20px] md:ml-[40px]"
+                >
+      
+                    <div 
+                    class="w-[90%] h-[250px] bg-gradient-to-r from-[#2198AF] to-[#244475] rounded-tr-[20px] rounded-tl-[20px] rounded-bl-[20px] rounded-br-[20px] ml-[20px] mt-[10px] md:mt-[20px] flex items-center justify-center"
+                    >
+                        <img src={template.image} alt="money sign" class="w-full h-full rounded-[20px]" />
+            
+                    </div>
+
+           
+
+                    <div 
+                    class=" mt-[10px] md:mt-[20px]"
+                    > 
+                            <p class="text-left ml-[40px] md:ml-[30px] mt-[10px] md:mt-[15px] text-[16px] w-[80%] font-semibold text-black">{template.description}</p>
+                            <p class="text-left ml-[40px] md:ml-[30px] mt-[10px] md:mt-[15px] text-[16px] w-[80%] font-light text-black">{template.price} <span class="font-bold ml-[3px]">Night</span></p>
+                        </div>
+                        <div class="w-full mt-[15px] flex items-center justify-center">
+                        <button class="w-[150px] h-[45px] text-black ml-[20%] md:ml-[-60px] mt-[0px] text-[15px] bg-[#DED0B6] rounded-lg">Book Now</button>
+                        <button class="w-[50px] h-[50px] bg-[#607274] ml-[15px] rounded-full flex items-center justify-center text-red-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+	<path fill="currentColor" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z" />
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                    ))}
+                </div>
+        </div>
+    </div>       
+</div>
+
+
+<!-- style below -->
+<style>
+.glasscard {
+    background-color: #fff;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+    .p{
+        font-family: 'Montserrat Variable', sans-serif;
+    }
+
+    .h1{
+        font-family: 'Lexend Variable', sans-serif;
+        font-weight: 500;
+        font-variation-settings: "wdth" 75, "wght" 700;
+    
+    }
+
+.grad1 {
+        background: -webkit-linear-gradient(#2198AF, #42B0C6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+
+</style>
