@@ -1,73 +1,60 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { reviews } from "../../data/reviews.json";
 ---
 
-<div class="w-full h-[500px] mt-[80px]">
-    <p class="text-[25px] text-left ml-[50px] text-[#765c2d]">What Our Customers</p>
-    <h1 class="text-[48px] font-bold ml-[50px] text-black">Are Saying</h1>
-    
-    <div class="w-full h-[70%] flex items-center justify-center md:mt-[50px]">
-        <div class="w-[23%] h-full ml-[-50px]">
-            <div class="w-[90%] h-[30px] mt-[10px] flex items-center justify-center">
-            <Icon name="mdi:star" class="text-[30px] ml-[-120px] text-yellow-500" />
-            <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-            <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-            <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-            <Icon name="mdi:star-half" class="text-[30px] text-yellow-500" />
+<!-- Anything in this file can be changed including titles, colors and even text size. -->
 
-
+<div 
+    class="w-[120%] md:w-full h-[750px] md:h-[550px]  mt-[-80px] md:mt-[100px] ml-[5px] md:ml-0"
+>
+    <p class="text-left text-[18px] font-normal text-[#765c2d]">Our Own Customer</p>
+    <h1 class="text-left text-[58px] font-bold text-black">Testimonials</h1>
+    <div
+        class="w-full h-[60%] md:h-[410px] flex justify-between overflow-x-hidden md:flex md:items-center md:justify-center mt-[40px] md:mt-[50px]"
+    >
+    <div 
+        class="flex w-full md:h-full overflow-scroll [&>div]:flex-shrink-0"
+    >
+    <!-- this is where the fetching will take place! -->
+    { reviews.map((template) => (
+        <div
+            class="w-[400px] md:w-[30%] h-[400px] md:h-[300px] bg-[#DED0B6] shadow-sm shadow-black rounded-[20px] mt-[10px] md:mt-0 ml-[20px] md:ml-[30px]"
+        >
+            <p class="text-left ml-[20px] w-[90%] text-[22px] text-extralight mt-[35px] text-black">"{template.review}"</p>
+            <div class="w-[80%] h-[60px] flex items-center justify-center md:mt-[20px]">
+                <div class="w-[30%] h-full">
+                    <div class="w-[50px] h-[50px] rounded-full ml-[20px] mt-[5px] bg-[#607274]">
+                        <img src={template.profileimage} alt="" class="w-full h-full rounded-full" />
+                    </div>
+                </div>
+                <div class="w-[70%] h-full">
+                    <h1 class="text-left ml-[20px] mt-[10px] md:mt-[5px] text-[20px] font-bold text-white md:ml-[-10px]">{template.name}</h1>   
+                    <p class="text-left ml-[20px] mt-[10px] md:mt-[5px] text-[18px] font-bold text-black md:ml-[-10px]">{template.position}</p>  
+                </div>
             </div>
-            <h1 class="text-[38px] font-bold w-[90%] text-black mt-[10px]">Best Travel Ever Ever</h1>
-            <p class="w-full text-[19px] font-normal text-gray-400">"Best Travel I have been trough and experienced"</p>
-            <p class="w-full text-[22px] font-bold mt-[30px] text-[#765c2d]">Ashley Norman</p>
-            <p class="w-full text-[18px] font-normal mt-[0px] text-black">4 Days Ago</p>
 
-        </div>
-        <div class="w-[23%] h-full ml-[50px]">
-            <div class="w-[90%] h-[30px] mt-[10px] flex items-center justify-center">
-                <Icon name="mdi:star" class="text-[30px] ml-[-120px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-            
-    
-    
-                </div>
-                <h1 class="text-[38px] font-bold w-[90%] text-black mt-[10px]">Best pricing in the US</h1>
-                <p class="w-full text-[19px] font-normal text-gray-400">"I couldnt believe how affordable it was for my trip"</p>
-                <p class="w-full text-[22px] font-bold mt-[30px] text-[#765c2d]">Seth Jackson</p>
-                <p class="w-full text-[18px] font-normal mt-[0px] text-black">2 Days Ago</p>
-        </div>
-        <div class="w-[23%] h-full ml-[50px]">
-            <div class="w-[90%] h-[30px] mt-[10px] flex items-center justify-center">
-                <Icon name="mdi:star" class="text-[30px] ml-[-120px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
                 
-    
-    
-                </div>
-                <h1 class="text-[38px] font-bold w-[90%] text-black mt-[10px]">Vacation felt like Home</h1>
-                <p class="w-full text-[19px] font-normal text-gray-400">"Felt like I was right at home but better!"</p>
-                <p class="w-full text-[22px] font-bold mt-[30px] text-[#765c2d]">Riley Smith</p>
-                <p class="w-full text-[18px] font-normal mt-[0px] text-black">34 Hours Ago</p>
         </div>
-        <!-- <div class="w-[23%] h-full bg-pink-200 ml-[20px]">
-            <div class="w-[90%] h-[30px] mt-[10px] flex items-center justify-center">
-                <Icon name="mdi:star" class="text-[30px] ml-[-120px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-                <Icon name="mdi:star" class="text-[30px] text-yellow-500" />
-                <Icon name="mdi:star-half" class="text-[30px] text-yellow-500" />
-    
-    
-                </div>
-                <h1 class="text-[38px] font-bold w-[90%] text-black mt-[10px]">Best Travel Ever Ever</h1>
-                <p class="w-full text-[19px] font-normal text-gray-400">"Best Travel I have been trough and experienced"</p>
-                <p class="w-full text-[22px] font-bold mt-[30px] text-[#765c2d]">Ashley Norman</p>
-                <p class="w-full text-[18px] font-normal mt-[0px] text-black">2 Days Ago</p>
-        </div> -->
-    </div>
+    ))}
 </div>
+
+<style>
+.glasscard {
+  background-color: #fff;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-family: "Kanit", sans-serif;
+}
+
+p {
+    font-family: 'Quicksand Variable', sans-serif;
+}
+    
+
+</style>

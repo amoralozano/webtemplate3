@@ -1,5 +1,5 @@
 ---
-
+import { Icon } from 'astro-icon/components';
 ---
 
 <!-- This is the Header of the page. -->
@@ -14,16 +14,16 @@
 
 
 <div
-    class="w-full mt-0 md:mt-[-50px]"
+    class="w-[120%] md:w-full mt-0 md:mt-[0px]"
 >
     <div
-     class="w-full h-[800px] md:h-[650px] md:flex md:items-center md:justify-center ml-[35px] md:ml-0"
+     class="w-full h-[800px] md:h-[650px] md:flex md:items-center md:justify-center ml-[0px] md:ml-0"
     >
         <div
         class="w-full h-[40%] md:w-[50%] md:h-full"
         >
-            <div class="w-[170px] h-[50px] bg-[#DED0B6] ml-[30px] md:ml-[50px] rounded-full flex items-center justify-center mt-[-10px] md:mt-[40px]">
-                <h1 class="text-[18px] font-light text-black">Travel easy</h1>
+            <div class=" w-[120px] h-[40px] md:w-[170px] md:h-[50px] bg-[#DED0B6] ml-[30px] md:ml-[50px] rounded-full flex items-center justify-center mt-[-10px] md:mt-[40px]">
+                <h1 class=" text-[16px] md:text-[18px] font-light text-black">Travel easy</h1>
             </div>
             <h1 class="text-left font-bold ml-[30px] md:ml-[50px] text-[50px] md:text-[70px] text-black w-[70%] md:w-[95%] mt-[10px] md:mt-[10px]">
             Explore and Stay Where it Feels Home
@@ -32,33 +32,59 @@
             The only app in the market where it helps you communicate quick and easy trough an app at work.
           
             </p>
-            <div class=" invisible md:visible w-[70%] h-[50px] md:h-[75px] mt-[30px] md:mt-[30px] md:ml-[50px] flex items-left justify-left bg-white rounded-full">
-                
+            <div class=" invisible md:visible w-[60%] h-[50px] md:h-[75px] mt-[30px] md:mt-[30px] md:ml-[50px] flex items-center justify-center bg-white rounded-full">
+                <div class="w-[60%] h-full  flex items-center justify-center ml-[-20px]">
+                    <div class="w-[30%] h-[90%]  flex items-center justify-center">
+                        <Icon name="mdi:location" class="text-[50px] ml-[20px] text-[#DED0B6]" />
+                    </div>
+                    <div class="w-[70%] h-[90%] ">
+                        <div class="w-full flex items-center justify-center">
+                            <p class="text-black">Location</p>
+                            <svg class="invisible md:visible text-black" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l-5-5h10z"/></svg>
+                        </div>
+                        <h1 class="text-[20px] text-black font-bold ml-[10px]">Tempe, Arizona</h1>
+                    </div>
+                </div>
+               
+                <div class="w-[15%] h-[80%] bg-black rounded-full ml-[100px] flex items-center justify-center">
+                    <Icon name="mdi:search" class="text-[40px] ml-[0px] text-white" />
+                </div>
             
 
             </div>
         </div>
 
-    <div
-     class="w-full h-[60%] md:w-[50%] md:h-full"
-    >
+        <div
+        class="w-full h-[60%] md:w-[50%] md:h-full"
+        >
         <img
-            src="https://i.imgur.com/tXZFmON.png"
+            src="https://i.imgur.com/S7LY6LW.png"
             alt="header image"
-            class="w-[90%] h-[400px] md:h-[550px] mt-[-150px] ml-[100px] md:ml-[60px] md:mt-[40px]"
+            class=" w-[90%] md:w-full h-[400px] md:h-[600px] mt-[-150px] ml-[50px] md:ml-[60px] md:mt-[40px]"
          />
         <p
-        class="visible md:invisible mt-[20px] md:mt-[30px] text-left ml-[30px] md:ml-[50px] text-[18px] md:text-[23px] text-white w-[90%]">
+        class="visible md:invisible mt-[20px] md:mt-[30px] text-left ml-[30px] md:ml-[50px] text-[18px] md:text-[23px] text-[#607274] w-[90%]">
         The only app in the market where it helps you communicate quick and easy trough an app at work.
-        it helps you communicate quick and easy trough an app at work.
+     
         </p>
+        <div class=" visible md:invisible w-[60%] md:w-[60%] h-[70px] md:h-[75px] mt-[30px] md:mt-[30px] ml-[30px] md:ml-[50px] flex items-center justify-center bg-white rounded-full">
+            <div class="w-[70%] md:w-[60%] h-full  flex items-center justify-center md:ml-[-20px]">
+                <div class="w-[30%] h-[90%]  flex items-center justify-center ml-[-50px] md:ml-0">
+                    <Icon name="mdi:location" class="text-[50px] ml-[20px] text-[#DED0B6]" />
+                </div>
+                <div class="w-full  md:w-[70%] h-[90%] ">
+                    <div class="w-full flex items-center justify-center">
+                        <p class="text-black">Location</p>
+                        <svg class=" text-black" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15l-5-5h10z"/></svg>
+                    </div>
+                    <h1 class="text-[20px] text-black font-bold ml-[10px]">Tempe, Arizona</h1>
+                </div>
+            </div>
+           
+           
 
-        <div 
-        class="visible md:invisible w-full h-[50px] md:h-[60px] mt-[30px] md:mt-[50px] flex items-left justify-left"
-        >
-            <button class="w-[150px] h-[50px] bg-[#C499F3] rounded-full text-white ml-[30px] md:ml-[50px] mt-[5px]">Get The App</button> 
-            <button class="w-[150px] h-[50px] border-2 border-[#C499F3] rounded-full text-white ml-[30px] mt-[5px]">About Bonni</button> 
         </div>
+       
 
     </div>
 </div>
