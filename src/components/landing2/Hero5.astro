@@ -5,10 +5,10 @@ import { reviews } from "../../data/reviews.json";
 <!-- Anything in this file can be changed including titles, colors and even text size. -->
 
 <div 
-    class="w-[120%] md:w-full h-[750px] md:h-[550px]  mt-[-80px] md:mt-[100px] ml-[5px] md:ml-0"
+    class="w-[120%] md:w-full  h-[550px] md:h-[550px]  mt-[100px] md:mt-[100px] ml-[5px] md:ml-0"
 >
     <p class="text-left text-[18px] font-normal text-[#765c2d]">Our Own Customer</p>
-    <h1 class="text-left text-[58px] font-bold text-black">Testimonials</h1>
+    <h1 class="text-left text-[58px] font-bold text-black mt-0 md:mt-[10px]">Testimonials</h1>
     <div
         class="w-full h-[60%] md:h-[410px] flex justify-between overflow-x-hidden md:flex md:items-center md:justify-center mt-[40px] md:mt-[50px]"
     >
@@ -18,18 +18,18 @@ import { reviews } from "../../data/reviews.json";
     <!-- this is where the fetching will take place! -->
     { reviews.map((template) => (
         <div
-            class="w-[400px] md:w-[30%] h-[400px] md:h-[300px] bg-[#DED0B6] shadow-sm shadow-black rounded-[20px] mt-[10px] md:mt-0 ml-[20px] md:ml-[30px]"
+            class="w-[400px] md:w-[30%] h-[300px] md:h-[300px] bg-black shadow-sm shadow-black rounded-[20px] mt-[10px] md:mt-0 ml-[20px] md:ml-[30px]"
         >
-            <p class="text-left ml-[20px] w-[90%] text-[22px] text-extralight mt-[35px] text-black">"{template.review}"</p>
-            <div class="w-[80%] h-[60px] flex items-center justify-center md:mt-[20px]">
+            <p class="text-left ml-[20px] w-[90%] text-[20px] mt-[35px] text-white">"{template.review}"</p>
+            <div class="w-[80%] h-[60px] flex items-center justify-center mt-[20px] md:mt-[20px]">
                 <div class="w-[30%] h-full">
-                    <div class="w-[50px] h-[50px] rounded-full ml-[20px] mt-[5px] bg-[#607274]">
+                    <div class="w-[50px] h-[50px] rounded-full ml-[20px] mt-[15px] md:mt-[5px] bg-[#607274]">
                         <img src={template.profileimage} alt="" class="w-full h-full rounded-full" />
                     </div>
                 </div>
                 <div class="w-[70%] h-full">
-                    <h1 class="text-left ml-[20px] mt-[10px] md:mt-[5px] text-[20px] font-bold text-white md:ml-[-10px]">{template.name}</h1>   
-                    <p class="text-left ml-[20px] mt-[10px] md:mt-[5px] text-[18px] font-bold text-black md:ml-[-10px]">{template.position}</p>  
+                    <h1 class="text-left ml-[0px] mt-[10px] md:mt-[5px] text-[20px] font-bold text-[#DED0B6] md:ml-[-10px]">{template.name}</h1>   
+                    <p class="text-left ml-[0px] mt-[10px] md:mt-[5px] text-[18px] font-bold text-white md:ml-[-10px]">{template.position}</p>  
                 </div>
             </div>
 

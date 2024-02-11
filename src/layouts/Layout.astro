@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import '@fontsource/righteous';
+import '@fontsource-variable/baloo-thambi-2';
 ---
 
 <!doctype html>
@@ -48,4 +50,15 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+
+	h1 {
+		font-family: 'Righteous', system-ui;
+		line-height: 1;
+	}
+
+	p {
+		font-family: 'Baloo Thambi 2 Variable', system-ui;
+	}
+
+
 </style>

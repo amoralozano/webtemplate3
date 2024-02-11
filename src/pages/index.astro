@@ -8,6 +8,7 @@ import Hero3 from '../components/landing1/Hero3.astro'
 import Hero4 from '../components/landing1/Hero4.astro'
 import Hero5 from '../components/landing1/Hero5.astro'
 import Footer from '../components/global/Footer.astro'
+import '@fontsource/righteous';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -42,11 +43,8 @@ import Footer from '../components/global/Footer.astro'
 		z-index: -1;
 	}
 	h1 {
-		font-size: 4rem;
-		font-weight: 700;
+		font-family: 'Righteous', system-ui;
 		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
