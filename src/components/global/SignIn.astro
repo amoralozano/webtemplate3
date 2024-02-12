@@ -1,4 +1,4 @@
-<div class="w-full h-[700px] maincard rounded-[50px] flex items-center justify-center">
+<div class="invisible md:visible w-[110%] md:w-full h-[700px] maincard rounded-[50px] md:flex md:items-center md:justify-center">
     <div class="md:w-[50%] md:h-full bg-white rounded-[50px] flex items-center justify-center">
       
             <div class="max-w-md w-full space-y-8">
@@ -54,6 +54,61 @@
     <div class="md:w-[50%] md:h-full rounded-tr-[50px] rounded-br-[50px]"></div>
 
 </div>
+
+
+<!-- mobile version -->
+
+<div class="visible md:invisible w-[120%] h-[500px] mt-[-650px] ml-[-25px] rounded-[50px]">
+  
+              <p class="text-black text-center text-[40px] font-extrabold">Welcome Back</p>
+              <h2 class=" text-center text-lg font-normal text-gray-900">
+                Please Enter Your Details
+              </h2>
+            <form class="mt-8 space-y-6" action="#" method="POST">
+              <input type="hidden" name="remember" value="true">
+              <div class="">
+                <div class="w-[80%] ml-[10%]">
+                  <label for="email-address" class="sr-only">Email address</label>
+                  <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+                </div>
+                <div class="w-[80%] ml-[10%] mt-[30px]">
+                  <label for="password" class="sr-only">Password</label>
+              <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="*********">
+                </div>
+              </div>
+        
+              <div class="">
+                <div class="flex items-center justify-center ">
+                  <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                  <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+                    Remember me (48 Hours )
+                  </label>
+                </div>
+        
+                <div class="text-sm flex items-center justify-center mt-[10px]">
+                  <a href="#" class="font-medium text-[#765c2d] hover:text-black">
+                    Forgot your password?
+                  </a>
+                </div>
+              </div>
+        
+              <div>
+                <button type="submit" class="group relative w-[80%] flex justify-center py-2 px-4 ml-[10%] border border-transparent text-sm font-medium rounded-md text-black bg-[#DED0B6] shadow-sm shadow-[#908571]">
+                  Sign in
+                </button>
+              </div>
+            </form>
+            <div class="w-full h-[60px] mt-[30px] flex items-center justify-center">
+              <img src="https://i.imgur.com/i5mkSfg.png" alt="logo1" class="w-[50px] h-[50px]" />
+              <img src="https://i.imgur.com/rDdet6p.png" alt="logo1" class="w-[50px] h-[50px] ml-[50px]" />
+              <img src="https://i.imgur.com/bl2jKVv.png" alt="logo1" class="w-[50px] h-[50px] ml-[50px]" />
+            </div>
+
+</div>
+
+
+
+
 
 <style>
      .maincard{

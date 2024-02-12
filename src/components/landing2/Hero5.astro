@@ -21,13 +21,21 @@ import { reviews } from "../../data/reviews.json";
             class="w-[400px] md:w-[30%] h-[300px] md:h-[300px] bg-black shadow-sm shadow-black rounded-[20px] mt-[10px] md:mt-0 ml-[20px] md:ml-[30px]"
         >
             <p class="text-left ml-[20px] w-[90%] text-[20px] mt-[35px] text-white">"{template.review}"</p>
-            <div class="w-[80%] h-[60px] flex items-center justify-center mt-[20px] md:mt-[20px]">
-                <div class="w-[30%] h-full">
-                    <div class="w-[50px] h-[50px] rounded-full ml-[20px] mt-[15px] md:mt-[5px] bg-[#607274]">
+            <div
+                class="w-[80%] h-[60px] flex items-center justify-center mt-[20px] md:mt-[20px]"
+            >
+                <div
+                    class="w-[30%] h-full"
+                >
+                    <div
+                        class="w-[50px] h-[50px] rounded-full ml-[20px] mt-[15px] md:mt-[5px] bg-[#607274]"
+                    >
                         <img src={template.profileimage} alt="" class="w-full h-full rounded-full" />
                     </div>
                 </div>
-                <div class="w-[70%] h-full">
+                <div
+                    class="w-[70%] h-full"
+                >
                     <h1 class="text-left ml-[0px] mt-[10px] md:mt-[5px] text-[20px] font-bold text-[#DED0B6] md:ml-[-10px]">{template.name}</h1>   
                     <p class="text-left ml-[0px] mt-[10px] md:mt-[5px] text-[18px] font-bold text-white md:ml-[-10px]">{template.position}</p>  
                 </div>

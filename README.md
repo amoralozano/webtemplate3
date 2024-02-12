@@ -1,20 +1,20 @@
-# Astro Starter Kit: Basics
+# Web Template Full / Starter Code
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+> 🗺️ **Feeling Adventurous?** Move The Hero components around for a different layout to your new site!
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Important ⚠️
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Your Website contains 2 landing pages for you to chose from AND a login page for authentication purposes!
 
-## 🚀 Project Structure
+![just-the-basics](https://i.imgur.com/TEI0qnZ.png)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Your Project Structure
+
+Inside of your Website Template, you'll see the following folders and files:
 
 ```text
 /
@@ -22,21 +22,30 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── content
+│   ├── data/
+│   │   └── content
 │   ├── layouts/
-│   │   └── Layout.astro
+│   │   └── content
 │   └── pages/
-│       └── index.astro
+│       └── content
 └── package.json
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+`src/components/` Will be where you find most of what makes up the landing page/s.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Images and assets will be limited when being provided by us. Make sure you use your creativity and find eye popping images & assets for your to your own taste.
 
-## 🧞 Commands
+## Image & Asset Resources:
+
+1. [Canva](https://www.canva.com/)
+2. [Adobe Express](https://www.adobe.com/express/)
+3. [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
+4. [imgur](https://imgur.com/)
+
+## 📋 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -49,6 +58,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 Want more content like this?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Want to stay up to date with whats coming next? 🤓
+
+Feel free to check [my Twitter / X](https://twitter.com/abdaeldev) or instagram for design ideas [Instagram](https://www.instagram.com/novaforge.design/).
