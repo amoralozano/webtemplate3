@@ -2,21 +2,42 @@
 interface Props {
 	title: string;
 }
-
-const { title } = Astro.props;
 import '@fontsource/righteous';
 import '@fontsource-variable/baloo-thambi-2';
+import { SEO } from "astro-seo";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<meta name="theme-color" content="#13151a"/>
+		<SEO
+      		title="TravHome"
+      		description="A heavily optimized description full of well-researched keywords." 
+      		openGraph={{
+        		basic: {
+          		title: "TravHome",
+          		type: "A type.",
+          		image: "https://i.imgur.com/M1QzMzI.png",
+        		}
+      		}}
+      		twitter={{
+        	creator: "@abdaeldev"
+     		}}
+      		extend={{
+        	// extending the default link tags
+        	link: [{ rel: "icon", href: "/favicon.ico" }],
+        	// extending the default meta tags
+        	meta: [
+          	{
+            name: "twitter:image",
+            content: "https://pbs.twimg.com/profile_images/1690577956006166530/mKe9PDPJ_400x400.jpg", // Use your own profile picture.
+          		},
+        		],
+      		}}
+    	/>
+		
 	</head>
 	<body>
 		<slot />
